@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="scripts/init.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Top articles</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="index.html" class="right" id="logout" onclick="logout()" style="display: none;">Logout</a>
+            <a href="#" class="right" id="reg_email" style="display: none;">reg_email</a>
+            <a href="register.html" class="right" id="register">Register</a>
+            <a href="login.html" class="right" id="login">Login</a>
+            
+        </div>
+        <div class="form">
+            <h2>LOGIN</h2>
+            <input type="text" name="email" id="email" placeholder="Email" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <p class="text" onclick="forgotPassword()"><a href="#">Forgot password?</a></p>
+            <button onclick="login()">Login</button>
+            <p style="padding-left: 5px;">Login with<img class="logo" src="assets/icons/fb.png">
+                <img class="logo" src="assets/icons/twitter.png">
+                <img class="logo" src="assets/icons/microsoft.png"></p>
+        </div>
+    </body>
+</html>

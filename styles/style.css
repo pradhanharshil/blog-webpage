@@ -1,0 +1,184 @@
+.leftcolumn {
+    float: left;
+    width: 80%;
+}
+.rightcolumn {
+    width: 20%;
+    float: left;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+.navbar a {
+    display: block;
+    float: left;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+}
+.navbar a.right {
+    float: right;
+}
+/*283593*/
+.navbar a:hover {
+    background-color: #283593;
+    color: white;
+}
+.card-right {
+    background-color: white;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: block;
+}
+.card-right h4,.card-right p {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: thin solid rgb(214, 214, 214);
+}
+.card-right p:hover {
+    background-color: whitesmoke;
+}
+.card {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    margin-right: 40px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+}
+.card * {
+    margin-top: 15px;
+}
+.card:hover {
+    background-color: whitesmoke;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+a img.share-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.button {
+    float: right;
+    width: fit-content;
+    height: 30px;
+    background-color: #283593;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.button:hover {
+    background-color: #141c5d;
+}
+.pages {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pages a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.pages a:hover, .pages a.active {
+    background-color: #283593;
+    color: white;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+}
+.copyright {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.form {
+    margin: auto;
+    display: block;
+    padding: 20px;
+    background-color: #d6dbf3;
+    border: none;
+    width: fit-content;
+    margin-top: 50px;
+    text-align: center;
+}
+.form input[type=email],input[type=password],input[type=text] {
+    height: 35px;
+    width: 300px;
+    padding-left: 10px;
+    outline:none;
+    border: 1px solid gray;
+    margin-top: 30px;
+    border-radius: 100px;
+}
+.form button {
+    height: 35px;
+    width: 310px;
+    padding-top : 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+    outline:none;
+    border: none;
+    margin-top: 25px;
+    border-radius: 100px;
+    background-color: #283593;
+    color: white;
+}
+.form input[type=email]:focus,input[type=password]:focus,input[type=text]:focus {
+    border: 1px solid black;
+}
+.form button:hover {
+    background-color: #141c5d;
+}
+.form p.text {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: end;
+    text-decoration: none;
+}
+.form p.text:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.form p {
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d6dbf3;
+}
+* {
+    margin: 0px;
+}
