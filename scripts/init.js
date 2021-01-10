@@ -10,7 +10,6 @@ fetch("../config.json").then(resp => resp.json())
             measurementId: authData.measurementId
         };
         firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
         
         let headerScript = document.createElement("script");
         let authScript = document.createElement("script");

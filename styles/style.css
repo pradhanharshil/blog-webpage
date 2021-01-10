@@ -59,7 +59,10 @@
 .card:hover {
     background-color: whitesmoke;
 }
-a {
+a.button{
+    text-decoration: none;
+}
+a.leftcol {
     text-decoration: none;
     color: black;
 }

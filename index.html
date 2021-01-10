@@ -6,6 +6,7 @@
         <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
         <!--Initialize firebase-->
         <script src="scripts/init.js"></script> 
     </head>
@@ -20,102 +21,19 @@
             <a href="register.html" class="right" id="register">Register</a>
             <a href="login.html" class="right" id="login">Login</a>
         </div>
-        <div class="leftcolumn">
-            <div class="card">
-                <h2>New XFCE 4.16 Stable Version is Out For UNIX-Like Operating Systems</h2>
-                <p>Last updated December 26, 2020</p>
-                <img src="assets/xfce.jpg" alt="Text">
-                <p>A new stable version 4.16 of XFCE, the most popular lightweight desktop
-                    environment for UNIX-Like operating systems, has been finally released. It contains
-                    a lot of changes ranging from visual to tools and libraries and improvements.
-                </p><br>
-                <div class="button">Read more</div>
-                <a href="#"><img src="assets/icons/fb.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/twitter.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/instagram.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/linkedin.png" class="share-icon"></a>
-            </div>
-            <div class="card">
-                <h2>Here are the Worthy Replacements of CentOS 8 for Your Production Linux Servers</h2>
-                <p>Last updated December 24, 2020</p>
-                <img src="assets/oracle-linux.png" alt="Text">
-                <p>CentOS is one of the most popular server distributions in the world.However, since CentOS Stream 
-                    is of rolling release nature, you may want to consider something that is more 
-                    stable for a production server. I’ll help you with that decision by suggestion 
-                    some recommendations in this article.
-                </p><br>
-                <div class="button">Read more</div>
-                <a href="#"><img src="assets/icons/fb.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/twitter.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/instagram.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/linkedin.png" class="share-icon"></a>
-            </div>
-            <div class="card">
-                <h2>Microsoft Disables GitHub Repository of Open Source Project youtube-dl</h2>
-                <p>Last updated December 20, 2020</p>
-                <img src="assets/youtube-dl-dmca.jpg" alt="Text">
-                <p>Recording Industry Association of America (RIAA) sent a notice to GitHub for hosting
-                    youtube-dl soucre code. GitHub took immediate action to disable repositories. But 
-                    was this a right thing to do ?
-                </p><br>
-                <div class="button">Read more</div>
-                <a href="#"><img src="assets/icons/fb.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/twitter.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/instagram.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/linkedin.png" class="share-icon"></a>
-            </div>
-            <div class="card">
-                <h2>New Features Coming to GNOME 40</h2>
-                <p>Last updated December 19, 2020</p>
-                <img src="assets/gnome.png" alt="Text">
-                <p>The GNOME shell team has shared newly updated design mockups of the Activities
-                    Overview and Application Grid, which you will probably see in the upcoming GNOME 
-                    40 desktop to be released in March 2021.
-                </p><br>
-                <div class="button">Read more</div>
-                <a href="#"><img src="assets/icons/fb.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/twitter.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/instagram.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/linkedin.png" class="share-icon"></a>
-            </div>
-            <div class="card">
-                <h2>Troubleshooting "No Bootable Medium Found" Error in VirtualBox</h2>
-                <p>Last updated December 16, 2020</p>
-                <img src="assets/virtualbox.png" alt="Text">
-                <p>Many VirtualBox users have experienced at least once the message
-                    <b>FATAL: Could not read from the boot medium! System halted.</b> The
-                    error is common when you are trying to start a new virtual machine. 
-                    Here's how you can fix it.
-                </p><br>
-                <div class="button">Read more</div>
-                <a href="#"><img src="assets/icons/fb.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/twitter.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/instagram.png" class="share-icon"></a>
-                <a href="#"><img src="assets/icons/linkedin.png" class="share-icon"></a>
-            </div>
-            <div class="pages">
-                <a href="#">&laquo;</a>
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">&raquo;</a>
-            </div>
-            <p class="copyright">&#169 itsfoss.com and fossbytes.com</p>
-        </div>
+        <div class="leftcolumn" id="articles"></div>
         <div class="rightcolumn">
             <div class="card-right">
                 <h4 style="background-color: #333;color: white;border-top-right-radius: 10px;border-top-left-radius: 10px;">Trending topics</h4>
-                <p><a href="#">Blockchain</a></p>
-                <p><a href="#">IoT</a></p>
-                <p><a href="#">Cloud Computing</a></p>
-                <p><a href="#">DevOps</a></p>
-                <p><a href="#">System Design</a></p>
-                <p><a href="#">Big Data</a></p>
-                <p><a href="#">Data Mining</a></p>
-                <p style="border: none;"><a href="#">AWS</a></p>
+                <p><a class = "leftcol" href="#">Blockchain</a></p>
+                <p><a class = "leftcol" href="#">IoT</a></p>
+                <p><a class = "leftcol" href="#">Cloud Computing</a></p>
+                <p><a class = "leftcol" href="#">DevOps</a></p>
+                <p><a class = "leftcol" href="#">System Design</a></p>
+                <p><a class = "leftcol" href="#">Big Data</a></p>
+                <p><a class = "leftcol" href="#">Data Mining</a></p>
             </div>
         </div>
     </body>
+    <script src="scripts/fetchpost.js"></script>
 </html>
